@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!-- 선언문 html -->
+<html lang="ko">
+    <meta charset="UTF-8"> <!-- UTF-8 전세계 표준 포맷 -->
+    <!-- explorer에 여러버전 혹시 낮은 버전 동작이 될 때 최신 익스플로러로 렌더링 해줌-->
+    <!-- edge버전부터 크롬 V8엔진 사용 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport가 있어야 모바일 디바이스가 모바일 페이지를 제대로 출력
+    하이브리앱 = 네이티브앱 + 웹앱
+    요소 = 태그 = 노드
+    1) 인라인요소 - 크기 없음, 자동 줄 바꿈 없음 <br /> <br>: 
+    2) 블록요소 - 자체 크기, 자동 줄 바꿈
+-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윈도우 사이즈</title>
+    <style>
+        .tag {
+            display: inline-block; /* 컨텐츠 감싸준다 */
+            background-color: aqua;
+            font-size: 48px;
+            padding: 16px;  /* 상하좌우 */
+            margin-top: 16px;
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tag">윈도우 사이즈</div><br>
+    <script>
+        window.addEventListener("resize", () => {   // arrow function
+
+        });     // 자바람다식지원
+    </script>
+    
+
+</body>
+</html>
