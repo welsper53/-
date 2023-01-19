@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+}
+
+.container {
+    /* 보이는 높이의 100% 모두 쓰겠다는 의미 */
+    height: 100%;                   /* 컨테이너의 부모(body)의 100% 채운다 */
+    display: flex;                  /* 플렉스 박스로 지정(기본:왼-오 정렬) 
+                                    - row,column,reverse 정렬 가능 */
+    flex-direction: row;        /*  display가 flex 상태가 되야 적용된다 */
+    /* flex-direction: row-reverse;         display가 flex 상태가 되야 적용된다 */
+    /* flex-direction: column-reverse;        /* display가 flex 상태가 되야 적용된다 */
+    background-color: beige;
+    justify-content: space-around;
+    flex-wrap: wrap;                /* wrap: 한 줄에 꽉찰 경우 다음 줄로 넘어간다 */
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: aquamarine;
+}

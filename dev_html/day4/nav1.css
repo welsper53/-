@@ -1,0 +1,49 @@
+/* 
+    우리가 패딩을 줬을 때 높이와 너비가 그 패딩을 
+    포함 했을 때도 동일한 높이와 너비가 되도록 해야한다
+
+*/
+* {
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body {
+    font-family: "Courier New", Courier New;
+    margin: 0px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.navbar_menu {
+    display: flex;
+}
+
+.navbar_menu_item {
+    padding: 8px 12px;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.navbar_menu_item:hover {
+    background-color: aquamarine;
+}

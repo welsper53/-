@@ -1,0 +1,24 @@
+* {
+
+}
+
+div, span {
+    width: 100px;
+    height: 100px;
+    /* border: 2px solid black; */
+    border: 2px dotted black;
+    margin-bottom: 20px;
+}
+/* 전후 줄바꿈 없이 수평으로 다른 엘리먼트와 나란히 배치
+하지만 인라인 엘리먼트가 되지 않았던
+리스와 가로세로 마진과 패딩 간격 */
+div {
+    background-color: red;
+    display: inline-block;
+    
+}
+
+span {
+    background-color: blue;
+    display: block;
+}

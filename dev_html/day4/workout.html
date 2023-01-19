@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./workout.css">
+    <!-- 
+        외부에 자바스크립트를 호출할 때 반드시 DOM tree 완성되어 있어야 한다
+        자바 스크립트 파일은 욉서버로 부터 다운로드 받고 브라우저가 실행을 
+        하는데 이 때 해당 html 문서의 DOM 구성이 완료되지 않으면 
+        이벤트 소스의 정보가 undefined 상태이므로 에러가 발생한다
+        => TypeError
+    -->
+    <script src="https://kit.fontawesome.com/114e8279ad.js" 
+        crossorigin="anonymous"></script>
+    <script defer src="./workout.js"></script>
+</head>
+<body>
+    <section class="list">
+        <!-- 헤더 영역 -->
+        <header class="header"> WorkoutApp </header>
+        
+        <ul class="items">
+            <li class="itme_row">
+                <div class="item">
+                    <span class="itme_name">스쿼트</span>
+                    <button class="btn_delete">
+                        <i class="fas far fa-trash-alt"></i>
+                    </button>
+                </div>
+            </li>
+
+            <li class="itme_row">
+                <div class="item">
+                    <span class="itme_name">데드리프트</span>
+                    <button class="btn_delete">
+                        <i class="fas far fa-trash-alt"></i>
+                    </button>
+                </div>
+            </li>
+
+            <li class="itme_row">
+                <div class="item">
+                    <span class="itme_name">레그프레스</span>
+                    <button class="btn_delete">
+                        <i class="fas far fa-trash-alt"></i>
+                    </button>
+                </div>
+            </li>
+        </ul>
+        
+        <!-- 푸터 영역 -->
+        <footer class="footer">
+            <input type="text" name="" class="user_input">
+            <button class="btn_add">
+                <i class="fas fa-plus"></i>
+            </button>
+        </footer>
+    </section>
+</body>
+</html>
