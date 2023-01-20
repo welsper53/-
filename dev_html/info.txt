@@ -1,6 +1,6 @@
+npm i express 설치
 
 
 
-
-// fontawesome API
+!!fontawesome API 연결하기 (html - head에 추가)
 <script src="https://kit.fontawesome.com/114e8279ad.js" crossorigin="anonymous"></script>
