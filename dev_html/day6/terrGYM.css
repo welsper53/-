@@ -92,6 +92,7 @@ div video {
 .txt p {
     font: normal 8vw/1 "Fredericka the Great";
     color: #fff;
+    font-size: 3rem;
 }
 
 footer {

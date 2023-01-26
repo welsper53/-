@@ -8,13 +8,13 @@
 
 
 if (500) {
-    console.log("true");
+    console.log("0true");
 }
 if (0) {        // 문자 '0'은 참
-    console.log("true");
+    console.log("1true");
 }
-if ('') {        // 문자 '0'은 참
-    console.log("true");
+if ('') {
+    console.log("2true");
 }else{
     console.log("aatrue");
 }
