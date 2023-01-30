@@ -140,6 +140,28 @@ a {
         transition: 0.3s;
     }
 
+    .main-navigation a {
+        display: block;
+        margin: auto;
+        margin-bottom: 8px;
+        padding: 12px;
+    }
+
+    .text-wrap {
+        top: 60px;
+
+    }
+
+    .text-wrap h2{
+        font-size: 36px;
+    }
+    .text-wrap h3{
+        font-size: 20px;
+    }
+    .text-wrap p{
+        font-size: 14px;
+    }
+
     .more-btn {
         display: block;
         position: absolute;
@@ -163,5 +185,9 @@ a {
         height: 24px;
         background: url(../images/icon-menu.svg);
         background-size: contain;
+    }
+
+    .video-wrap {
+        /* width: 200px; */
     }
 }
