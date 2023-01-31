@@ -2,7 +2,7 @@
     margin: 0;                  /* 1: 4면에 대한 외부여백은 0 */
     padding: 0;                 /* 2: 4면에 대한 내부여백은 0 */
     box-sizing: border-box;     /* 3: 여백을 포함한 크기 계산 */
-    border: 1px solid red;    /* 4: 여백부분, 스타일을 죽인 부분 */
+    /*border: 1px solid red;    /* 4: 여백부분, 스타일을 죽인 부분 */
 }
 
 ul {
@@ -26,4 +26,108 @@ body {
     top: 50%;                       /* 12: y축 중앙배치 - 주의 요소의 왼쪽 상단 모서리 위치 */
     left: 50%;                      /* 13: x축 중앙배치 */
     transform: translate(-50%, -50%);   /* 14: 요소의 중앙 위치를 잡음 */
+}
+
+.wrap .menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrap .menu a {
+    font-size: 24px;
+    color: gray;
+}
+.wrap .menu a:nth-of-type(1) {
+    float: left;
+}
+.wrap .menu a:nth-of-type(2) {
+    float: right;
+}
+
+.wrap .profile{
+    text-align: center;
+    width: 100%;
+}
+.wrap .profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.wrap .profile h1 {
+    font: bold 22px/1 "aria";
+    color: gray;
+    margin-bottom: 5px;
+}
+.wrap .profile p {
+    font: bold 12px/1 "aria";
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* a태그 css활용하여 버튼으로 바꿔보기 */
+.wrap .profile a {
+    display: block;
+    width: 180px;
+    height: 32px;
+    margin: 0px auto 20px;
+    font: 12px/30px bold "arial";
+    background-color: aqua;
+    color: gray;
+    text-shadow: 2px 2px 3px black;
+    border-radius: 16px;
+}
+/*
+인라인 요소는 기본적으로 가운데 정렬이 되고
+만일 block요소를 주면 기본적으로 왼쪽 정렬이 된다
+이것을 가운데 오게 할 땐 margin에 auto를 준다
+*/
+
+.wrap .contact {
+    margin-bottom: 20px;
+}
+.wrap .contact li {
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid gray;
+}
+.wrap .contact li i {
+    width: 20%;
+    text-align: center;
+    color: gray;
+}
+.wrap .contact li span {
+    font: 12px/1 "orbitorn";
+    color: gray;
+    letter-spacing: 1px;        /* 글자간 간격 */
+}
+
+
+.wrap .others {
+    text-align: center;
+}
+/* a(anchor)인라인요소 - 크기가 없다 */
+.wrap .others a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius:  50%;
+    margin: 0px 10px;
+}
+
+.wrap .others a:nth-of-type(1) {
+    background-color: aqua;
+}
+.wrap .others a:nth-of-type(2) {
+    background-color: greenyellow;
+}
+.wrap .others a:nth-of-type(3) {
+    background-color: pink;
+}
+.wrap .others a:nth-of-type(4) {
+    background-color: lightgoldenrodyellow;
 }
