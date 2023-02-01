@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* border: 1px solid red; */
+            padding: 0;
+            margin: 0;
+        }
+
+        .title {
+            position: absolute;
+            background-color: white;
+            top: 20px;
+            left: 20px;
+        }
+        
+        span {
+            position: absolute;
+            border: 1px solid gray;
+            width: 70%;
+            top: 35px;
+            left: 10px;
+            padding: 10px;
+        }
+        .tTitle {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div {
+            float: left;
+            margin-left: 4px;
+        }
+        .insBtn {
+            left: 50%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+    <body>
+        <div class="title">공지사항 작성하기</div>
+        <span>
+            <table class="tTable" cellpadding="10" cellspacing="5">
+                <tr>
+                    <td class="tTitle">제목</td>
+                    <td>
+                        <input type="text" name="title" placeholder="제목을 입력하시오">
+                    </td>
+                </tr>
+                <tr class="dddd">
+                    <td class="tTitle">내용</td>
+                    <td class="tInContent">
+                        <input type="text" name="content" placeholder="내용을 입력하시오">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tTitle">첨부파일</td>
+                    <td>
+                        <input type="file" id="uploadFile" name="fileBtn" placeholder="파일 선택" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    </td>
+                </tr>
+            </table>
+            <button class="insBtn">작성하기</button>
+        </span>
+    </body>
+</html>

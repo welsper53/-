@@ -1,0 +1,73 @@
+* {
+    margin: 10;
+    padding: 0;
+    border: 1px solid red;
+}
+
+/* ===== header ===== */
+header {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: block;
+    border: 1px solid black;
+    padding: 10px;
+    /* position: relative; */
+}
+
+header .docTitle {
+    position: absolute;
+    background-color: white;
+    top: 5px;
+    left: 30px;
+}
+
+header .tTable {
+    width: 500px;
+}
+
+.tTable .tInContent {
+    width: 100%;
+    height: 300px;
+}
+
+
+.tTable .insertDoc {
+    float: left;
+}
+
+.tTable .tTitle {
+    font-weight: bold;
+    text-align: center;
+}
+
+.tTable #insBtn {
+    left: 50%;
+}
+
+
+
+/* ===== main ===== */
+main {
+    border-top: 1px solid gray;
+    padding-top: 50px;
+}
+
+
+main .conTable {
+    border: 1;
+    width: 100%;
+    height: 100%;
+}
+
+main .tHeader {
+    background-color: coral;
+    color: white;
+}
+main .tContent{
+    background-color: bisque;
+}
+main .tFooter {
+    background-color: coral;
+    color: white;
+    text-align: center;
+}
