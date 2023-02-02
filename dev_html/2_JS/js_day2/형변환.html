@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형변환</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 형변환 - 특정 조건이 만족되면 자료형이 강제로 변한다
+        const num1 = "2"    // 문자
+        const num2 = 3
+        const num3 = 5
+
+        // 문자 + 숫자 => 문자값
+        console.log(num1+num2+num3);            // 235
+        document.write(num1+num2+num3+"<br>");
+        console.log(num3+num2+num1);            // 82
+        document.write(num3+num2+num1+"<br>");
+        
+        console.log(num3+num2+parseInt(num1));  // 10
+        document.write(num3+num2+parseInt(num1));
+    </script>
+</body>
+</html>
