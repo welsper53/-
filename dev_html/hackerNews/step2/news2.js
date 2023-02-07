@@ -12,6 +12,7 @@ const CONTENT_URL = "https://api.hnpwa.com/v0/item/@id.json";
 
 // 제목을 클릭 시 다중 댓글 출력하기 위한 div 생성
 const content = document.createElement("div");
+// DOM API 단점 : DOM구조가 직관적이지 않음
 
 
 // 뉴스 타이틀
@@ -47,11 +48,11 @@ window.addEventListener("hashchange", () => {
     .then(response => response.json())
     .then(result => {
         // 계획: <div><h1>제목1</h1><h1>제목2</h1>...</div>
-        const title = this.document.createElement("h1");
+        const title = this.document.createElement("h1");    // DOM API <h1></h1>
         title.innerHTML = result.title;
         
         // content 상수에 div태그 넣기
-        content.appendChild(title);
+        content.appendChild(title);     // DOM API - 라우팅기능 구현할 수 없음
     })
     .catch(error => console.log('error', error));
 })

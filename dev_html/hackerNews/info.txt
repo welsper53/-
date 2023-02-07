@@ -1,0 +1,26 @@
+1. 
+함수 활용하여 반복되는 코드를 줄여본다
+    - [함수](https://www.notion.so/03f7dac118f144aabe7a8b76bdae69a0)
+    - 코드 양, 복잡도가 어떻게 변했는지?
+
+2. 
+배열 
+- CRUD
+- [배열 함수](https://www.notion.so/b0d77161ca7f4705b83c8cb0b6b9ad94)
+- 배열 내장함수 - filter, join, push, ….
+
+3. 
+DOM 구조 그려보기 (
+- ` 기호 사용
+- 코드 양은 늘어나지만 직관적이다 → 유지보수가 좋음
+- DOM API → ` - 리펙토링
+- 문자열을 이용한 HTML다루기
+
+4. 
+라우터 적용해 보기
+
+5. 
+페이징 처리
+
+6. 
+TailWind CSS 적용해 보기
