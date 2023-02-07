@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>구글로그인-[모듈화 사용: type="modul"]</title>
+    </head>
+    <body>
+        <!-- 
+            type=text/javascript 사용하는 경우와
+            type=module 사용 경우 호환이 안되는 부분이 발생한다
+        -->
+        <!-- 
+            ECMAScript6 기준으로 작업하는가와 WWW CommonJS 기준으로 작업하느냐에 따라 다르다
+        -->
+        <script type="module">
+            import { firebaseApp } from "../service/firebase.js"
+            import AuthLogic from "../service/authLogic.js"
+            console.log(firebaseApp);
+            const authLogic = new AuthLogic();
+            console.log(AuthLogic);
+
+            const btnGoogle = document.querySelector("#btnGoogle");
+            btnGoogle.addEventListener("click", (event) => {
+                /* button태그 사용 시에 디폴트 타입이 submit이기 때문에 폼 전송이 일어나며
+                이럴 경우 해당 페이지가 리플레시가 발생함에 따라 이상동작이 발생하므로
+                반드시 button태그로 click이벤트 처리시 주의할것 */
+                /*  event.preventDefault()  : submit방지용으로 사용
+                    => 이벤트를 명시적으로 처리하지 않은 경우, 해당 이벤트에 대한 
+                    사용자 에이전트의 기본 동작을 실행하지 않도록 지정 */
+                event.preventDefault();
+
+                // console.log(event.target + event.currentTarget);
+                authLogic.login("Google").then((snapshot) => {
+                    console.log(snapshot);
+                });
+            });
+        </script>
+        <button id="btnGoogle">구글로그인</button>
+    </body>
+</html>
