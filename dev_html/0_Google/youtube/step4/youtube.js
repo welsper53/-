@@ -45,8 +45,9 @@ const search = (query) => {
   const videoList = [];
   const key = "AIzaSyB1vNvFxiP1ksmLzPiSoPq85nQhG0ljHwU";
   // const SEARCH_URL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${query}&key=${key}`;
-  const SEARCH_URL =
-    "http://192.168.10.47:5500/google/youtube/step4/sample.json";
+  const SEARCH_URL = "./sample.json";
+  // const SEARCH_URL =
+  //   "http://192.168.10.47:5500/google/youtube/step4/sample.json";
 
   ajax.open("GET", SEARCH_URL, false);
   ajax.send();
