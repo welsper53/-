@@ -1,4 +1,7 @@
 const ajax = new XMLHttpRequest();  //비동기통신
+// 문자열 처리하는 경우가 훨씬 더 직관적이다 <- 정적 - 고정
+// but, 배열은 덜 하다 - 뚝뚝 끊어지니까... <- 동적
+//
 const videoList = [];
 
 const key = 'AIzaSyApRV2JyPcJUTEbJs4pmzJuT4pSmMIsovY';
