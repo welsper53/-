@@ -1,0 +1,4 @@
+1. package.json에 등록한다
+  "type": "module",
+
+2. 생략하면 CommonJS이므로 반드시 module 등록한 후 사용가능하다 -주의
