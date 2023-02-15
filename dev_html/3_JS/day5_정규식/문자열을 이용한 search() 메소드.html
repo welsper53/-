@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열을 이용한 search() 메소드</title>
+</head>
+<body>
+    <SCRIPT LANGUAGE="JavaScript">
+        var special = "~!@#$%^&*( )_=+|\\{}[];:\‘\“<>,?/";	// 특수문자 일람
+        var str = prompt("ID를 입력 하세요", "emanho");		// 사용자가 입력한 ID
+        var bool = false;						// Boolean 초기값
+    
+        for( i=0; i<str.length; i++ ){
+            var c = str.charAt(i);			// c는 ID중에서 index가 i인 문자
+            if(special.search(c) >= 0){			// 특수문자 중에 c가 있으면 true
+                bool = true;
+                break;
+            }
+        }
+        if(bool) window.alert("특수문자는 ID에 사용할 수 없습니다")
+        else window.alert( str + "은(는) 사용할 수 있는 ID입니다")
+    </SCRIPT>    
+</body>
+</html>

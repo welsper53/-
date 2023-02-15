@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행의시작과 끝에 매치되는 메타문자</title>
+</HEAD>
+<BODY>
+    <SCRIPT LANGUAGE="JavaScript">
+        var str = "Error와 Horror의 r 수는 3이다"
+    
+        var reg1 = /^Error/;	
+        var reg2 = /이다$/;	
+    
+        document.write( "str = " + str + "<P>");
+        document.write( "str.match(reg1) = " + str.match(reg1) + "<br>");
+        document.write( "str.match(reg2) = " + str.match(reg2) + "<br>")
+    </SCRIPT>
+</BODY>
+</html>
+<!-- 
+    실행 결과
+str = Error와 Horror의 r 수는 3이다
+str.match(reg1) = Error
+str.match(reg2) = 이다    
+-->

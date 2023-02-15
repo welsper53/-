@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규식의 부정 문자클래스</title>
+</head>
+<body>
+    <SCRIPT LANGUAGE="JavaScript">
+        var str = "개와 고양이, 소와 말은 가축입니다."; 
+    
+        var re1 = /[개소말]/g;	
+        var re2 = /[^개소말]/g;	    // 개, 소, 말이 아닌 것
+    
+        document.write( str.replace(re1, "x"), "<BR>");     // x와 고양이, x와 x은 가축입니다.
+        document.write( str.replace(re2, "x"), "<BR>");     // 개xxxxxxx소xx말xxxxxxxx
+    </SCRIPT>
+</body>
+</html>

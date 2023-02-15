@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규식의 단축 문자클래스</title>
+</head>
+<body>
+    <SCRIPT LANGUAGE="JavaScript">
+        var str = prompt("영문 이름을 입력하세요","emanho");
+        var reg1 = /[0123456789]/;		// 숫자 0부터 9까지의 문자클래스
+        var reg2 = /[^a-zA-Z0-9]/;		// 영문자와 숫자를 제외한 모든 문자
+    
+        if(str.search(reg2) > 0) {
+            alert("사용할 수 없는 ID 입니다");
+        }
+        else if( str.substr(0,1).match(reg1) ){
+            window.alert("ID의 첫글자에는 숫자가 올 수 없습니다")
+        }
+        else window.alert("사용할 수 있는 ID 입니다")
+    </SCRIPT>    
+</body>
+</html>

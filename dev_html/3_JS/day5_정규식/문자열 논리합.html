@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규식 문자열 논리합</title>
+<SCRIPT LANGUAGE="JavaScript">
+    var reg = /욕설|음란|광고|나쁜 말/g;
+
+    function findBad(){
+        var str = document.fo.board.value;		
+        str = str.replace(reg, "XXX");		
+        document.fo.board.value = str; 
+    }
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM name="fo">
+    <TEXTAREA cols="30" rows="5" name="board" style="font-size:13"> </TEXTAREA>  <BR>
+    <INPUT type=button value="나쁜 말 검사하기" onclick=" findBad()">
+</FORM>
+</BODY>
+</html>

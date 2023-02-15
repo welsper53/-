@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규식의 단축클래스 메타문자</title>
+</head>
+<body>
+    <SCRIPT LANGUAGE="JavaScript">
+        var str = "나이는 27세 몸무게 67kg 키 176cm";
+    
+        var reg1 = /\s\d\d/g;//공백과 숫자 두개
+        var reg2 = /\s\d\d\S/g;// 공백과 숫자 두 개와 공백이 아닌 임의의 문자
+        var reg3 = /\s\d\d\D/g;// 공백과 숫자 두 개와 숫자가 아닌 문자 하나
+        var reg4 = /\W\W\W\s/g;// 알파벳과 숫자를 제외한 연속된 3개의 문자와 공백
+    
+        document.write( "str = "+ str + "<P>")
+        document.write( "str.match(\/\\s\\d\\d/g) = " + str.match(reg1) + "<br>" )      // str.match(/\s\d\d/g) = 27, 67, 17
+        document.write( "str.match(\/\\s\\d\\S/g) = " + str.match(reg2) + "<br>" )      // str.match(/\s\d\S/g) = 27세, 67k, 176
+        document.write( "str.match(\/\\s\\d\\D/g) = " + str.match(reg3) + "<br>" )      // str.match(/\s\d\D/g) = 27세, 67k
+        document.write( "str.match(\/\\W\\W\\W\\s/g) = " + str.match(reg4) + "<br>" )   // str.match(/\W\W\W\s/g) = 나이는 ,몸무게
+    </SCRIPT>
+</body>
+</html>

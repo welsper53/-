@@ -7,9 +7,9 @@ let colors = ['red', 'green', 'blue']
 
 // 이전 방법
 colors.forEach(function(color, index, items) { // 3번 반복
-    // console.log(color);
-    // console.log(index);
-    // console.log(items);
+    console.log(color);
+    console.log(index);
+    console.log(items);
 })
 /*  출력값 <- colors.length
 red
@@ -25,9 +25,13 @@ blue
 
 // arrow function <- React(데이터변하면 변하는 것만 렌더링 처리)
 colors.forEach((color, index, items) => {
-    // 동일
+    console.log(color);
+    console.log(index);
+    console.log(items);
 })
 
 colors.map(function(color, index, items) {
-    // 동일
+    console.log(color);
+    console.log(index);
+    console.log(items);
 })

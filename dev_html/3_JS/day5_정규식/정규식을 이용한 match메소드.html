@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규식을 이용한 match메소드</title>
+</head>
+<body>
+    <SCRIPT LANGUAGE="JavaScript">
+        var reg = /아빠/g;		// “아빠”를 문자열 전체에서 검색하라는 정규식
+        var str = "아빠 ! 아빠를 아빠라 부르지 못하고";
+        document.write( str + "<BR>" );
+    
+        var a = str.match(reg);     // typeof a = Object
+        document.write( "문자열에서 아빠와 매치된 결과 = " + a.length +"개" );
+    </SCRIPT>
+</body>
+</html>

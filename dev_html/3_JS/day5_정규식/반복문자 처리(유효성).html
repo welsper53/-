@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규식 반복문자 처리</title>
+</head>
+<body>
+    <SCRIPT LANGUAGE="JavaScript">
+        var str = prompt("주민번호를 입력 하세요","730525-2002083");	
+        var num = /\d{6}-\d{7}/;
+    
+        if( str.match(num) == null || str.length != 14){
+            alert("주민번호의 형태가 잘못 되었습니다");
+        }
+        else document.write( "주민번호가" + str +" 이군요");
+    </SCRIPT>
+</body>
+</html>

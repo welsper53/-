@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규식의 속성(i, g, m)</title>
+</head>
+<body>
+    <SCRIPT LANGUAGE="JavaScript">
+        var str = "Damo가 damo이면 DAMO는 damO 이다 ADamo"
+    
+        var re1 = /Damo/g;	// g속성은 문자열 전역검색 
+        var re2 = /damo/i;	// i속성은 대문자와 소문자를 구분하지 않음
+        var re3 = /Damo/gi;	// g와 i속성(대소문자 구분없이 전역검색)
+    
+        document.write("str = " + str + "<P>");
+        document.write("replace(/Damo/g, xx) = " +  str.replace(re1, "xx") + "<BR>" );
+        document.write("replace(/damo/i, xx) = " +  str.replace(re2, "xx") + "<BR>" );
+        document.write("replace(/Damo/gi, xx)= " +  str.replace(re3, "xx") + "<BR>" );
+    </SCRIPT>
+</body>
+</html>
