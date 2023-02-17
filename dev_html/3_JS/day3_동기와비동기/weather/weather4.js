@@ -31,5 +31,13 @@ getWeather("seoul")
       return getWeather("incheon");
    });
 
-
+/* 
+   Seoul, clear sky
+   서울 날씨 가져오기
+   Seoul, clear sky
+   부산 날씨 가져오기
+   Busan, broken clouds
+   인천 날씨 가져오기
+   Incheon, clear sky
+*/
 
