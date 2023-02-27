@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["css/style.css"],"sourcesContent":["* { /* *는 모드 요소(태그,노드) 나타낸다 */\r\n    box-sizing: border-box;     /* 외부여백, 내부여백포함한 크기 계산 */\r\n}"],"names":[],"version":3,"file":"index.b2625c6b.css.map","sourceRoot":"/__parcel_source_root/"}
